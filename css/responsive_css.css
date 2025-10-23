@@ -1,0 +1,401 @@
+/* ===================================
+   RESPONSIVE STYLES FOR iBLOG
+   Add this file: css/responsive.css
+   Link in HTML: <link rel="stylesheet" href="/css/responsive.css">
+   =================================== */
+
+/* Tablet Devices (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .max-width-1 {
+        max-width: 90vw;
+    }
+
+    .max-width-2 {
+        max-width: 85vw;
+    }
+
+    .year-box {
+        width: 200px;
+        right: 20px;
+        top: 80px;
+    }
+
+    .content-right img {
+        height: 20vw;
+        width: 20vw;
+    }
+}
+
+/* Mobile Devices (481px - 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* Navigation Responsive - Keep it visible */
+    .navigation {
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .nav-left {
+        flex-direction: column;
+        text-align: center;
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .nav-left span {
+        margin-bottom: 15px;
+    }
+
+    .nav-left ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        gap: 15px;
+    }
+
+    .nav-left ul li {
+        margin: 5px 10px;
+    }
+
+    .nav-right {
+        width: 100%;
+    }
+
+    .nav-right form {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .form-input {
+        width: 70%;
+        margin: 0;
+    }
+
+    .btn {
+        width: 28%;
+        padding: 10px 5px;
+    }
+
+    /* Content Section Responsive */
+    .content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content-left,
+    .content-right {
+        width: 100%;
+    }
+
+    .content-left {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .content-right {
+        justify-content: center;
+    }
+
+    .content-right img {
+        height: 40vw;
+        width: 40vw;
+        margin: 20px auto;
+    }
+
+    /* Home Articles Responsive */
+    .home-articles {
+        padding: 10px;
+    }
+
+    .home-article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-article img {
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .home-article-content {
+        padding: 10px;
+    }
+
+    .home-article-content span {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .year-box {
+        position: relative;
+        width: 100%;
+        right: 0;
+        top: 0;
+        margin: 20px 0;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Blog Post Responsive */
+    .post-img {
+        height: auto;
+    }
+
+    .blog-post-content {
+        padding: 15px;
+    }
+
+    .blog-post-content h1 {
+        font-size: 24px;
+    }
+
+    .blog-post-content p {
+        font-size: 16px;
+        margin: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .more-posts {
+        margin: 20px 0;
+        width: 90%;
+    }
+
+    .blogpost-meta {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author-info {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .author-info div {
+        justify-content: center;
+    }
+
+    /* Contact Form Responsive */
+    .contact-content {
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .contact-content h2 {
+        text-align: center;
+    }
+
+    .contact-form {
+        align-items: center;
+    }
+
+    .form-box input,
+    .form-box textarea {
+        width: 90vw;
+    }
+
+    /* Footer Responsive */
+    footer {
+        padding: 15px;
+    }
+
+    .footer-content {
+        height: auto;
+        padding: 10px;
+    }
+}
+
+/* Small Mobile Devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+    
+    /* Navigation - Stack vertically on very small screens */
+    .nav-left {
+        font-size: 20px;
+    }
+
+    .nav-left ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-left ul li {
+        margin: 8px 0;
+    }
+
+    .nav-left ul li a {
+        font-size: 16px;
+    }
+
+    .nav-right form {
+        flex-direction: column;
+    }
+
+    .form-input {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Typography Adjustments */
+    .content-left h1 {
+        font-size: 22px;
+    }
+
+    .content-left p {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .home-articles h2 {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .home-article-content h3 {
+        font-size: 16px;
+    }
+
+    .home-article-content span {
+        font-size: 12px;
+    }
+
+    /* Blog Post Mobile */
+    .blog-post-content h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .blog-post-content p {
+        font-size: 14px;
+        margin: 10px;
+        line-height: 1.5;
+    }
+
+    /* Contact Form Mobile */
+    .contact-content h2 {
+        font-size: 20px;
+    }
+
+    .form-box input,
+    .form-box textarea {
+        font-size: 14px;
+        padding: 8px;
+        width: 95vw;
+    }
+
+    /* Image Adjustments */
+    .content-right img {
+        height: 50vw;
+        width: 50vw;
+    }
+
+    .home-article img {
+        width: 90%;
+    }
+
+    /* Max Width Adjustments */
+    .max-width-1,
+    .max-width-2 {
+        max-width: 95vw;
+    }
+
+    /* Footer Mobile */
+    .footer-content p {
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Devices (below 320px) */
+@media screen and (max-width: 320px) {
+    .nav-left {
+        font-size: 18px;
+    }
+
+    .nav-left ul li a {
+        font-size: 14px;
+    }
+
+    .content-left h1 {
+        font-size: 18px;
+    }
+
+    .home-articles h2 {
+        font-size: 18px;
+    }
+
+    .blog-post-content h1 {
+        font-size: 18px;
+    }
+}
+
+/* Landscape Mode for Mobile Devices */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .navigation {
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-left ul {
+        flex-direction: row;
+        margin: 5px 0;
+    }
+
+    .content {
+        margin-top: 10px;
+    }
+
+    .content-right img {
+        height: 30vh;
+        width: 30vh;
+    }
+}
+
+/* Prevent horizontal scroll */
+body {
+    overflow-x: hidden;
+}
+
+/* Make images responsive globally */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Smooth transitions for responsive changes */
+.navigation,
+.nav-left,
+.nav-right,
+.content,
+.home-article {
+    transition: all 0.3s ease;
+}
+
+/* Print Styles */
+@media print {
+    .navigation,
+    .nav-right,
+    .year-box,
+    footer {
+        display: none;
+    }
+
+    .content,
+    .blog-post-content {
+        max-width: 100%;
+    }
+}
