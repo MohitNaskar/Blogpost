@@ -1,0 +1,18 @@
+.contact-content{
+    /* background-color: rgb(118, 155, 121); */
+    display: block;
+    margin-top: 20px;
+    padding-top: 26px;
+    padding-left: 25px;
+    height: 40vw;
+    background-color: rgb(213, 236, 192,0.3);
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    width: 100%;
+    border-radius: 40px;
+}
